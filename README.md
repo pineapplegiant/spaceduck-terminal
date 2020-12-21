@@ -13,7 +13,7 @@ A intergalactic space theme for your terminal! This is the spaceduck repo for te
 * [Terminal.app MacOS](#terminalapp-macos)
 * [Alacritty](#alacritty)
 * [Kitty](#kitty)
-* [Windows Terminal](#windowsterminal)
+* [Windows Terminal](#windows-terminal)
 
 ## Iterm2
 
