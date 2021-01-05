@@ -41,21 +41,21 @@ colors:
     black:   '#000000'
     red:     '#e33400'
     green:   '#5ccc96'
-    yellow:  '#b3a1e6'
+    yellow:  '#f2ce00'
     blue:    '#00a3cc'
-    magenta: '#f2ce00'
-    cyan:    '#7a5ccc'
-    white:   '#686f9a'
+    magenta: '#ce6f8f'
+    cyan:    '#00a3cc'
+    white:   '#ffffff'
 
   # Bright colors
   bright:
     black:   '#686f9a'
     red:     '#e33400'
     green:   '#5ccc96'
-    yellow:  '#b3a1e6'
+    yellow:  '#f2ce00'
     blue:    '#00a3cc'
-    magenta: '#f2ce00'
-    cyan:    '#7a5ccc'
+    magenta: '#ce6f8f'
+    cyan:    '#00a3cc'
     white:   '#f0f1ce'
 ```
 
