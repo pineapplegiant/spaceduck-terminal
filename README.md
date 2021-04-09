@@ -6,6 +6,12 @@ A intergalactic space theme for your terminal! This is the spaceduck repo for te
   <img  src="./img/iTerm.png" alt="Terminal screenshot of iTerm2 terminal with neofetch program ran">
 </center>
 
+**Color Disclaimer:**
+
+I've personally swapped the yellow and purple colors in most terminal themes.
+This is a personal preference as I've found it to render the colorscheme how I like since Spaceduck is dark purple oriented. Feel free to change the colorscheme locally to be more semantically correct! I'm open to change the repo here if any bugs are found however.
+Take a look at [this thread](https://github.com/pineapplegiant/spaceduck-terminal/pull/2) to see the visual differences at this change.
+
 ## Currently Ported Terminals
 
 - [Iterm2](#iterm2)
