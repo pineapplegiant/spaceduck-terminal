@@ -20,6 +20,8 @@ Take a look at [this thread](https://github.com/pineapplegiant/spaceduck-termina
 - [Kitty](#kitty)
 - [Windows Terminal](#windows-terminal)
 - [Tmux](#tmux)
+- [Konsole](#konsole)
+- [Termux](#termux)
 
 ## Iterm2
 
@@ -149,3 +151,13 @@ But if you're too lazy to click the link you can put this in your tmux.conf for 
   # When Commands are run
   set -g message-style "fg=#0f111b,bg=#686f9a"
 ```
+
+## Konsole
+
+Copy `spaceduck.colorscheme` to the `.local/share/konsole/`. After that run `konsoleprofile colors="spaceduck"` OR in Konsole's settings navigate to `Configure Konsole...` > `Profiles` > Select your active profile e.g. `Shell (Default)` > `Edit...` > `Appearence` > Find and select `SpaceDuck` in the `Color scheme & font` > Press `Apply`.
+
+## Termux
+
+Copy `spaceduck.properties` file to the `~/.termux/` and rename it to `colors.properties`. After that exit Termux's session and launch it again.
+Note: if you have Termux:Styling plugin installed - changing color scheme with it will overwrite `colors.properties` file with selected theme.
+
