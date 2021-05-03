@@ -67,7 +67,8 @@ colors:
     white:   '#f0f1ce'
 ```
 ## st
-The color theme for [st](https://st.suckless.org/)(The Simple Terminal) is located in `spaceduck.h` you can import it into config.h
+The color theme for [st](https://st.suckless.org/) is located in `spaceduck.h` you can import it into config.h then recompile st using `sudo make install`,
+once you reopen st you should have spaceduck !
 
 ## Kitty
 
