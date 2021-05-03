@@ -18,10 +18,12 @@ Take a look at [this thread](https://github.com/pineapplegiant/spaceduck-termina
 - [Terminal.app MacOS](#terminalapp-macos)
 - [Alacritty](#alacritty)
 - [Kitty](#kitty)
+- [st](#st)
 - [Windows Terminal](#windows-terminal)
 - [Tmux](#tmux)
 - [Konsole](#konsole)
 - [Termux](#termux)
+
 
 ## Iterm2
 
@@ -64,6 +66,8 @@ colors:
     cyan:    '#7a5ccc'
     white:   '#f0f1ce'
 ```
+## st
+The color theme for [st](https://st.suckless.org/)(The Simple Terminal) is located in `spaceduck.h` you can import it into config.h
 
 ## Kitty
 
