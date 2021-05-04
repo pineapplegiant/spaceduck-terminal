@@ -67,8 +67,7 @@ colors:
     white:   '#f0f1ce'
 ```
 ## st
-The color theme for [st](https://st.suckless.org/) is located in `spaceduck.h` you can import it into config.h then recompile st using `sudo make install`,
-once you reopen st you should have spaceduck !
+The color theme for [st](https://st.suckless.org/) is located in `spaceduck.h`, navigate to where you the source code of st is located (usually in `~/.local/src/st`), open `config.h`, search for `static const char *colorname`, delete that part of the configuration until `unsigned int defaultcs = 257;` replace that with the content of `spaceduck.h`, save the file and exit your editor, then run `sudo make install` to recompile st, close the terminal and launch it again and _voila!_ you should have spaceduck up and running!
 
 ## Kitty
 
