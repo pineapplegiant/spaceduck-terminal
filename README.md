@@ -18,10 +18,12 @@ Take a look at [this thread](https://github.com/pineapplegiant/spaceduck-termina
 - [Terminal.app MacOS](#terminalapp-macos)
 - [Alacritty](#alacritty)
 - [Kitty](#kitty)
+- [st](#st)
 - [Windows Terminal](#windows-terminal)
 - [Tmux](#tmux)
 - [Konsole](#konsole)
 - [Termux](#termux)
+
 
 ## Iterm2
 
@@ -64,6 +66,8 @@ colors:
     cyan:    '#7a5ccc'
     white:   '#f0f1ce'
 ```
+## st
+The color theme for [st](https://st.suckless.org/) is located in `spaceduck.h`, open `config.h` (usually in `~/.local/src/st`), search for `static const char *colorname`, delete that part of the configuration until `unsigned int defaultcs = 257;` replace that with the content of `spaceduck.h`, save the file and exit your editor, then run `sudo make install` where st is located to recompile it, close the terminal and launch the terminal again and _voila!_, you should have spaceduck up and running!
 
 ## Kitty
 
