@@ -23,6 +23,7 @@ Take a look at [this thread](https://github.com/pineapplegiant/spaceduck-termina
 - [Tmux](#tmux)
 - [Konsole](#konsole)
 - [Termux](#termux)
+- [Xresources](#xresources)
 
 
 ## Iterm2
@@ -66,7 +67,9 @@ colors:
     cyan:    '#7a5ccc'
     white:   '#f0f1ce'
 ```
+
 ## st
+
 The color theme for [st](https://st.suckless.org/) is located in `spaceduck.h`, open `config.h` (usually in `~/.local/src/st`), search for `static const char *colorname`, delete that part of the configuration until `unsigned int defaultcs = 257;` replace that with the content of `spaceduck.h`, save the file and exit your editor, then run `sudo make install` where st is located to recompile it, close the terminal and launch the terminal again and _voila!_, you should have spaceduck up and running!
 
 ## Kitty
@@ -165,3 +168,45 @@ Copy `spaceduck.colorscheme` to the `.local/share/konsole/`. After that run `kon
 Copy `spaceduck.properties` file to the `~/.termux/` and rename it to `colors.properties`. After that exit Termux's session and launch it again.
 Note: if you have Termux:Styling plugin installed - changing color scheme with it will overwrite `colors.properties` file with selected theme.
 
+## Xresources
+
+Copy the settings from `spaceduck.xresources` to your `~/.Xresources` file, or you can include it from a separate file with `#include "path/to/spaceduck.xresources"`, just be sure to specify the directory that the file is located in to `xrdb` with [`xrdb -I$HOME ~/.Xresources`](https://wiki.archlinux.org/title/X_resources#Include_files).
+
+```Xresources
+! special
+*.foreground:   #ecf0c1
+*.background:   #0f111b
+*.cursorColor:  #ecf0c1
+
+! black
+*.color0:       #000000
+*.color8:       #686f9a
+
+! red
+*.color1:       #e33400
+*.color9:       #e33400
+
+! green
+*.color2:       #5ccc96
+*.color10:      #5ccc96
+
+! yellow
+*.color3:       #b3a1e6
+*.color11:      #b3a1e6
+
+! blue
+*.color4:       #00a3cc
+*.color12:      #00a3cc
+
+! magenta
+*.color5:       #f2ce00
+*.color13:      #f2ce00
+
+! cyan
+*.color6:       #7a5ccc
+*.color14:      #7a5ccc
+
+! white
+*.color7:       #686f9a
+*.color15:      #f0f1ce
+```
