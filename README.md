@@ -24,6 +24,7 @@ Take a look at [this thread](https://github.com/pineapplegiant/spaceduck-termina
 - [Konsole](#konsole)
 - [Termux](#termux)
 - [Xresources](#xresources)
+- [Mintty](#mintty)
 
 
 ## Iterm2
@@ -209,4 +210,69 @@ Copy the settings from `spaceduck.xresources` to your `~/.Xresources` file, or y
 ! white
 *.color7:       #686f9a
 *.color15:      #f0f1ce
+```
+
+## Mintty
+
+Themes are usually found on the `/usr/share/mintty/themes/` folder. Either copy the `spaceduck.minttyrc` as `/usr/share/mintty/themes/spaceduck` or create a `spaceduck` file in such folder and copy the following text:
+
+```conf
+# REGULAR COLORS
+# Color 0
+Black=0,0,0             # #000000
+
+# Color 1
+Red=227,52,0            # #E33400
+
+# Color 2
+Green=92,204,150        # #5CCC96
+
+# Color 3
+Yellow=179,161,230      # #B3A1E6
+
+# Color 4
+Blue=0,163,204          # #00A3CC
+
+# Color 5
+Magenta=242,206,0       # #F2CE00
+
+# Color 6
+Cyan=122,92,204         # #7A5CCC
+
+# Color 7
+White=104,111,154       # #686F9A
+
+
+# BOLD COLORS
+# Color 10
+BoldBlack=104,111,154   # #686F9A
+
+# Color 11
+BoldRed=227,52,0        # #E33400
+
+# Color 12
+BoldGreen=92,204,150    # #5CCC96
+
+# Color 13
+BoldYellow=179,161,230  # #B3A1E6
+
+# Color 14
+BoldBlue=0,163,204      # #00A3CC
+
+# Color 15
+BoldMagenta=242,206,0   # #F2CE00
+
+# Color 16
+BoldCyan=122,92,204     # #7A5CCC
+
+# Color 17
+BoldWhite=240,241,206   # #F0F1CE
+
+# EXTRA COLORS
+# Foreground
+ForegroundColour=236,240,193    # #ECF0C1
+# Background
+BackgroundColour=15,17,27       # #0F111B
+# Cursor
+CursorColour=236,240,193        # #ECF0C1
 ```
