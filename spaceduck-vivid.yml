@@ -1,0 +1,124 @@
+colors:
+  # Theme colors
+    background: '0f111b'
+    black:   '000000'
+    red:     'e33400'
+    green:   '5ccc96'
+    yellow:  'b3a1e6'
+    blue:    '00a3cc'
+    magenta: 'f2ce00'
+    cyan:    '7a5ccc'
+    white:   'f0f1ce'
+
+core:
+  regular_file: {}
+
+  directory:
+    foreground: blue
+    font-style: bold
+
+  executable_file:
+    foreground: yellow
+    font-style: bold
+
+  symlink:
+    foreground: yellow
+
+  broken_symlink:
+    foreground: yellow
+    background: red
+  missing_symlink_target:
+    foreground: yellow
+    background: red
+  fifo:
+    foreground: magenta
+
+  socket:
+    foreground: magenta
+
+  character_device:
+    foreground: blue
+
+  block_device: {}
+
+  setuid: {}
+
+  setgid: {}
+
+  reset_to_normal: {}
+
+  multi_hard_link: {}
+
+  file_with_capability: {}
+
+  door: {}
+
+  normal_text:
+    {}
+
+  sticky:
+    {}
+
+  sticky_other_writable:
+    {}
+
+  other_writable:
+    {}
+
+text:
+  special:
+    foreground: yellow
+    font-style: underline
+
+  todo:
+    foreground: green
+
+  licenses:
+    foreground: green
+    font-style: italic
+
+  configuration:
+    foreground: green
+
+  other:
+    foreground: white
+
+markup:
+  foreground: yellow
+
+  other:
+    foreground: green
+
+programming:
+  source:
+    foreground: magenta
+
+  tooling:
+    foreground: green
+
+
+media:
+  foreground: green
+
+office:
+  document:
+    foreground: cyan
+  spreadsheet:
+    foreground: green
+  presentation:
+    foreground: cyan
+  calendar:
+    foreground: cyan
+    font-style: underline
+
+archives:
+  foreground: red
+  font-style: underline
+
+executable:
+  foreground: yellow
+  font-style: bold
+
+unimportant:
+  foreground: white
+  font-style: italic
