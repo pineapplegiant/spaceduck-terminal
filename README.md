@@ -276,3 +276,6 @@ BackgroundColour=15,17,27       # #0F111B
 # Cursor
 CursorColour=236,240,193        # #ECF0C1
 ```
+
+# vivid
+copy `spaceduck-vivid.yml` to your `.config` then add `export LS_COLORS="$(vivid generate ~/.config/spaceduck-vivid.yml)"` to the end of your `.bashrc`
