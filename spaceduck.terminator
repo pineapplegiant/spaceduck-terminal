@@ -1,0 +1,8 @@
+[[Spaceduck]]
+  background_color = "#0F111B"
+  cursor_color = "#ECF0C1"
+  cursor_color_fg = False
+  foreground_color = "#ECF0C1"
+  palette = "#000000:#e33400:#5ccc96:#b3a1e6:#00a3cc:#f2ce00:#7a5ccc:#686f9a:#686f9a:#e33400:#5ccc96:#b3a1e6:#00a3cc:#f2ce00:#7a5ccc:#f0f1ce"
+  bold_is_bright = True
+  #use_theme_colors = True
