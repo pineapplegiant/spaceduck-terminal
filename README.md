@@ -277,5 +277,32 @@ BackgroundColour=15,17,27       # #0F111B
 CursorColour=236,240,193        # #ECF0C1
 ```
 
-# vivid
-copy `spaceduck-vivid.yml` to your `.config` then add `export LS_COLORS="$(vivid generate ~/.config/spaceduck-vivid.yml)"` to the end of your `.bashrc`
+## vivid
+Copy `spaceduck-vivid.yml` to your `.config`, then add `export LS_COLORS="$(vivid generate ~/.config/spaceduck-vivid.yml)"` to the end of your `.bashrc` file.
+
+## Terminator
+The recommended way to use spaceduck in your Terminator is to create a new profile. If you wish to do so,
+you can copy the contents of the `spaceduck.terminator` file and append them to your Terminator config 
+file (`~/.config/terminator/config`) as follows:
+
+```config
+# ...
+[profiles]
+  [[default]]
+    # WHATEVER YOUR 'default' PROFILE HAS
+    # ...
+  [[Spaceduck]]
+    background_color = "#0F111B"
+    cursor_color = "#ECF0C1"
+    cursor_color_fg = False
+    foreground_color = "#ECF0C1"
+    palette = "#000000:#e33400:#5ccc96:#b3a1e6:#00a3cc:#f2ce00:#7a5ccc:#686f9a:#686f9a:#e33400:#5ccc96:#b3a1e6:#00a3cc:#f2ce00:#7a5ccc:#f0f1ce"
+    bold_is_bright = True
+    #use_theme_colors = True
+    #font = <YOUR FONT> <SIZE>
+# ...
+```
+
+Otherwise, if you wish to have your default profile to have a Spaceduck colorscheme, you can instead
+replace the options you wish in the `[[default]]` field in your `config` file.
+
