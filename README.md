@@ -69,6 +69,52 @@ colors:
     white:   '#f0f1ce'
 ```
 
+## Wezterm
+
+The color scheme for [Wezterm](https://wezfurlong.org/wezterm/) is in the `wezterm.lua` file or you can copy it here!
+
+```lua
+-- Colors
+colors = {
+  -- Body
+  background = '#0f111b',
+  foreground = '#ecf0c1',
+
+  -- Cursor
+  cursor_bg = '#4B3F72',
+  cursor_fg = '#ecf0c1',
+
+  -- Selection
+  selection_fg = '#ecf0c1',
+  selection_bg = '#1F2041',
+
+  -- Split
+  split = '#1F2041',
+
+  -- Colors
+  ansi = {
+    '#000000',
+    '#e33400',
+    '#5ccc96',
+    '#b3a1e6',
+    '#00a3cc',
+    '#f2ce00',
+    '#7a5ccc',
+    '#686f9a',
+  },
+  brights = {
+    '#686f9a',
+    '#e33400',
+    '#5ccc96',
+    '#b3a1e6',
+    '#00a3cc',
+    '#f2ce00',
+    '#7a5ccc',
+    '#f0f1ce',
+  },
+},
+```
+
 ## st
 
 The color theme for [st](https://st.suckless.org/) is located in `spaceduck.h`, open `config.h` (usually in `~/.local/src/st`), search for `static const char *colorname`, delete that part of the configuration until `unsigned int defaultcs = 257;` replace that with the content of `spaceduck.h`, save the file and exit your editor, then run `sudo make install` where st is located to recompile it, close the terminal and launch the terminal again and _voila!_, you should have spaceduck up and running!
