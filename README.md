@@ -25,6 +25,7 @@ Take a look at [this thread](https://github.com/pineapplegiant/spaceduck-termina
 - [Termux](#termux)
 - [Xresources](#xresources)
 - [Mintty](#mintty)
+- [Rio](#rio)
 
 
 ## Iterm2
@@ -279,3 +280,54 @@ CursorColour=236,240,193        # #ECF0C1
 
 # vivid
 copy `spaceduck-vivid.yml` to your `.config` then add `export LS_COLORS="$(vivid generate ~/.config/spaceduck-vivid.yml)"` to the end of your `.bashrc`
+
+## Rio
+For more information on [Rio](https://github.com/raphamorim/rio), check out their repository. To get Spaceduck colors in your Rio terminal, copy the `spaceduck.toml` file to your rio `.config/rio/themes/` directory. Then, if not already created, set up your Rio config file at `.config/rio/config.toml`, and reference the theme using `theme="spaceduck"`
+
+*Note:* You will need to reload your terminal for the changes to take effect.
+
+You can also copy the details here:
+
+```
+[colors]
+# Regular colors
+background = '#0f111b'
+black = '#000000'
+blue = '#00a3cc'
+cursor = '#686f9a'
+cyan = '#7a5ccc'
+foreground  = '#ecf0c1'
+green = '#5ccc96'
+magenta = '#f2ce00'
+red = '#e33400'
+white = '#686f9a'
+yellow = '#b3a1e6'
+
+# UI colors
+tabs = '#686f9a'
+tabs-active = '#e33400'
+selection-foreground = '#686f9a'
+selection-background = '#ecf0c1'
+
+# Dim colors (Refernce to "dark" in most terminal configurations)
+dim-black = '#000000'
+dim-blue = '#00a3cc'
+dim-cyan = '#7a5ccc'
+dim-foreground = '#ecf0c1'
+dim-green = '#5ccc96'
+dim-magenta = '#f2ce00'
+dim-red = '#e33400'
+dim-white = '#686f9a'
+dim-yellow = '#b3a1e6'
+
+# Bright colors
+light-black =   '#686f9a'
+light-red =     '#e33400'
+light-green =   '#5ccc96'
+light-yellow =  '#f2ce00'
+light-blue =    '#00a3cc'
+light-magenta = '#b3a1e6'
+light-cyan =    '#7a5ccc'
+light-white =   '#f0f1ce'
+```
+
