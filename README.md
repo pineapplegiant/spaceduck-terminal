@@ -279,3 +279,6 @@ CursorColour=236,240,193        # #ECF0C1
 
 # vivid
 copy `spaceduck-vivid.yml` to your `.config` then add `export LS_COLORS="$(vivid generate ~/.config/spaceduck-vivid.yml)"` to the end of your `.bashrc`
+
+# Ghostty
+Copy the `spaceduck` file to your `$HOME/.config/ghostty/themes` directory, set `theme = spaceduck` in `$HOME/.config/ghostty/config`, then reload configuration in Ghostty or restart it.
